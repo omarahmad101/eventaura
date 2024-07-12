@@ -41,7 +41,7 @@ const Hero = () => {
         width="300"
       />
       <CardImgOverlay >
-        <CardText className="cardoverlay">supporting text below as a natural</CardText>
+        <CardText className="cardoverlay">Serene Soundscape Soiree</CardText>
       </CardImgOverlay>
     </Card>
 
@@ -55,7 +55,7 @@ const Hero = () => {
         width="300"
       />
       <CardImgOverlay >
-        <CardText className="cardoverlay">supporting text below as a natural</CardText>
+        <CardText className="cardoverlay">FutureTech Expo Hub</CardText>
       </CardImgOverlay>
     </Card>
 
@@ -69,7 +69,7 @@ const Hero = () => {
         width="300"
       />
       <CardImgOverlay >
-        <CardText className="cardoverlay">supporting text below as a natural</CardText>
+        <CardText className="cardoverlay">Nature's Palette Showcase</CardText>
       </CardImgOverlay>
     </Card>
 
@@ -83,7 +83,7 @@ const Hero = () => {
         width="300"
       />
       <CardImgOverlay >
-        <CardText className="cardoverlay">supporting text below as a natural</CardText>
+        <CardText className="cardoverlay">World Flavors Adventure</CardText>
       </CardImgOverlay>
     </Card>
 

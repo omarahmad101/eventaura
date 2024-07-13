@@ -53,7 +53,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                to="works"
+                to="services"
                 spy={true}
                 smooth={true}
                 onClick={toggleMenu}
@@ -63,7 +63,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                to="portfolio"
+                to="gallaryo"
                 spy={true}
                 smooth={true}
                 onClick={toggleMenu}

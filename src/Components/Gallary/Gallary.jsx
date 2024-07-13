@@ -9,7 +9,7 @@ import Imagecards6 from "../assets/Imagecards6.png";
 
 const Gallary = () => {
   return (
-    <div className="gallary">
+    <div className="gallary" id="gallary">
       <div className="s-main">
         <div className="s-title">
           <p className="sm-title">Gallary</p>

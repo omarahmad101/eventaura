@@ -1,0 +1,112 @@
+/* Base styles */
+.s-main {
+  padding: 1.5rem 9rem; /* Adjusted padding for smaller screens */
+}
+
+.s-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 3rem; /* Reduced padding for smaller screens */
+}
+
+
+.sm-title{
+  color: var(--blue);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.sl-title{
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem; /* Adjusted padding for smaller screens */
+}
+
+.s-card {
+  flex: 0 0 calc(50% - 2rem); /* Two cards per row by default */
+  margin: 1rem;
+  height: 20vh;
+  box-sizing: border-box;
+  padding: 1rem 2rem; /* Adjusted padding for smaller screens */
+  background-color: #f8faff;
+  border-radius: 20px; /* Reduced border radius for smaller screens */
+  text-align: center; /* Center align the card content */
+}
+
+.s-icons {
+  font-size: 4rem; /* Reduced icon size for smaller screens */
+}
+
+.s-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem; /* Reduced gap for smaller screens */
+}
+
+.s-card-title {
+  font-size: 1.2rem; /* Reduced font size for smaller screens */
+  font-weight: 700;
+}
+
+.s-card-text {
+  text-align: center;
+  color: #646464;
+}
+
+.s-link {
+  font-weight: bold;
+  font-size: 20px; /* Reduced font size for smaller screens */
+  text-decoration: none;
+}
+
+/* Media query for tablets and larger screens */
+@media (min-width: 768px) {
+  .s-card {
+    flex: 0 0 calc(33.33% - 2rem); /* Three cards per row for tablets */
+    /* Adjusted padding and other styles for tablets */
+  }
+
+  .s-icons {
+    font-size: 5rem; /* Adjusted icon size for tablets */
+  }
+
+  .s-card-title {
+    font-size: 1.5rem; /* Adjusted font size for tablets */
+  }
+
+  .s-link {
+    font-size: 22px; /* Adjusted font size for tablets */
+  }
+}
+
+/* Media query for phones */
+@media (max-width: 767px) {
+  .s-card {
+    flex: 0 0 calc(100% - 2rem); /* Full width (stacked) for phones */
+    margin: 0.5rem 0; /* Adjusted margin for phones */
+    padding: 1rem; /* Adjusted padding for phones */
+  }
+
+  .s-icons {
+    font-size: 3rem; /* Reduced icon size for phones */
+  }
+
+  .s-card-title {
+    font-size: 1.1rem; /* Reduced font size for phones */
+  }
+
+  .s-link {
+    font-size: 18px; /* Reduced font size for phones */
+  }
+}

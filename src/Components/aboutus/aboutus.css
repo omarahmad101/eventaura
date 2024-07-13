@@ -1,5 +1,5 @@
 .aboutus {
-  height: 85vh;
+  height: auto;
   width: 100%;
   display: flex;
   background-color: var(--blue);
@@ -107,4 +107,186 @@
 .icon-space {
   margin-right: 15px; /* Adjust the space as needed */
   font-size: larger;
+}
+
+@media (max-width: 1200px) {
+  .aboutus {
+    min-height: 50rem; /* Adjust this value as needed */
+    width: 100%;
+    display: flex;
+    background-color: var(--blue);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 25rem;
+  }
+
+  .about1,
+  .about2 {
+    width: 100%;
+    height: max-content;
+    z-index: 2; /* Higher z-index to be in front of the affect element */
+  }
+
+  .about1 {
+    margin-top: 10px;
+    margin-right: -150px;
+  }
+
+  .about2 {
+    margin-bottom: 10px;
+  }
+
+  .a-title {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .a-titleM {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: white; /* Text color */
+    text-shadow: -2px -2px 0 #000, 2px 2px 0 #000, -2px -2px 0 #000,
+      2px 2px 0 #000; /* Outline color and position */
+  }
+
+  .a-para {
+    font-weight: 300;
+    font-size: 1rem;
+  }
+
+  .a-btns {
+    float: left;
+    margin-top: -3rem;
+    margin-left: -3rem;
+  }
+
+  .a-btns {
+    margin-top: 10px;
+    float: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutus {
+    min-height: 75rem; /* Adjust this value as needed */
+    width: 100%;
+    display: flex;
+    background-color: var(--blue);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 0.8rem;
+  }
+
+  .a-left {
+    margin-top: -350px;
+  }
+
+  .about1,
+  .about2 {
+    width: 100%;
+    height: max-content;
+    z-index: 2; /* Higher z-index to be in front of the affect element */
+  }
+
+  .about1 {
+    margin-top: 10px;
+    margin-right: -150px;
+  }
+
+  .about2 {
+    margin-bottom: 10px;
+  }
+
+  .a-title {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .a-titleM {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: white; /* Text color */
+    text-shadow: -2px -2px 0 #000, 2px 2px 0 #000, -2px -2px 0 #000,
+      2px 2px 0 #000; /* Outline color and position */
+  }
+
+  .a-para {
+    font-weight: 300;
+    font-size: 1rem;
+  }
+
+  .a-btns {
+    float: left;
+    margin-top: -3rem;
+    margin-left: -3rem;
+  }
+
+  .a-btns {
+    margin-top: 10px;
+    float: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutus {
+    min-height: 85rem; /* Adjust this value as needed */
+    width: 100%;
+    display: flex;
+    background-color: var(--blue);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .a-left {
+    margin-top: -550px;
+  }
+
+  .about1,
+  .about2 {
+    width: 100%;
+    height: max-content;
+    z-index: 2; /* Higher z-index to be in front of the affect element */
+  }
+
+  .about1 {
+    margin-top: 10px;
+    margin-right: -150px;
+  }
+
+  .about2 {
+    margin-bottom: 10px;
+  }
+
+  .a-title {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .a-titleM {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: white; /* Text color */
+    text-shadow: -2px -2px 0 #000, 2px 2px 0 #000, -2px -2px 0 #000,
+      2px 2px 0 #000; /* Outline color and position */
+  }
+
+  .a-para {
+    font-weight: 300;
+    font-size: 1rem;
+  }
+
+  .a-btns {
+    float: left;
+    margin-top: -3rem;
+    margin-left: -3rem;
+  }
+
+  .a-btns {
+    margin-top: 10px;
+    float: left;
+  }
 }

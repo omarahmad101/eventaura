@@ -88,3 +88,113 @@
   margin-top: 4rem;
   border-radius: 20px;
 }
+
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 1200px) {
+  .hero {
+    padding: 10px 100px 50px 100px;
+  }
+
+  .title {
+    font-size: 50px;
+  }
+
+  .info {
+    font-size: 20px;
+  }
+
+  .btns {
+    padding: 40px;
+  }
+
+  .booknow, .btn2 {
+    padding: 15px;
+    font-size: 1.3rem;
+  }
+
+  .cardss {
+    margin-top: -40px;
+  }
+
+  .custom-card {
+    flex: 0 1 30%;
+  }
+
+  .cardoverlay {
+    margin-top: 150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    padding: 10px 30px 50px 30px;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .info {
+    font-size: 18px;
+  }
+
+  .btns {
+    padding: 20px;
+  }
+
+  .booknow, .btn2 {
+    padding: 12px;
+    font-size: 1.1rem;
+  }
+
+  .cardss {
+    margin-top: -20px;
+  }
+
+  .custom-card {
+    flex: 0 1 45%;
+    margin: 5px;
+  }
+
+  .cardoverlay {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero {
+    padding: 10px 10px 50px 10px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .info {
+    font-size: 16px;
+  }
+
+  .btns {
+    padding: 10px;
+  }
+
+  .booknow, .btn2 {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .cardss {
+    margin-top: -10px;
+  }
+
+  .custom-card {
+    flex: 0 1 100%;
+    margin: 5px 0;
+  }
+
+  .cardoverlay {
+    margin-top: 50px;
+    font-size: 1rem;
+  }
+}

@@ -1,22 +1,24 @@
+/* Base styles */
 .n-wrapper {
   height: 10vh;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 2rem;
-  top: 0;
+  align-items: center;
   padding: 0.5rem 3.5rem;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .n-left {
   flex: 1;
-  align-items: center;
-  justify-content: left;
   display: flex;
+  align-items: center;
+  justify-content: flex-start;
   gap: 2rem;
 }
 
 .n-name {
-  font-size: 1.9rem;
+  font-size: 2.2rem;
   font-weight: bold;
   color: var(--blue);
 }
@@ -29,26 +31,124 @@
   font-weight: 400;
 }
 
-.n-list > ul {
+.n-list ul {
   display: flex;
-  gap: 2rem;
   margin-right: 2rem;
   transition: ease-in-out 0.3s;
   font-size: 1.5rem;
-  padding-top: 10px;
+  padding-top: 20px;
+  list-style-type: none; /* Remove bullets */
 }
 
-.n-list > ul :hover {
+.n-list ul li {
+  margin-right: 20px;
+}
+
+.n-list ul li:last-child {
+  margin-right: 0;
+}
+
+.n-list ul li:hover {
   color: var(--blue);
   cursor: pointer;
 }
 
-.n-button {
-  flex: 2;
+.button {
+  padding: 10px 20px;
+  background-color: #0052ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-@media screen and (max-width: 720px) {
-  .n-list {
+/* Toggle Styling */
+.nav-toggle {
+  display: none; /* Hide toggle button by default */
+  
+}
+
+.nav-toggle-label {
+  cursor: pointer;
+  display: block;
+  padding: 10px;
+  position: relative;
+  z-index: 1001;
+}
+
+.nav-toggle-label span {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-toggle:checked + .nav-toggle-label span {
+  transform: rotate(45deg);
+}
+
+.nav-toggle:checked + .nav-toggle-label span:before,
+.nav-toggle:checked + .nav-toggle-label span:after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+/* Media Query for Responsive Navigation */
+@media (max-width: 1200px) {
+  .nav-toggle {
+    display: block; /* Display toggle button on smaller screens */
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 1000;
+    opacity: 0; /* Hide the actual checkbox visually */
+  }
+
+  .nav-toggle-label {
+    display: block;
+  }
+
+  .nav-toggle-label span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .n-right {
     display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 60px; /* Position below header */
+    left: 0;
+    background-color: #ffffff;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 20px 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .n-right.active {
+    display: flex;
+  }
+
+  .n-list ul {
+    flex-direction: column;
+    margin-right: 0;
+  }
+
+  .n-list ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .nav-toggle:checked + .n-right {
+    display: flex;
   }
 }

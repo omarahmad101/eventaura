@@ -20,9 +20,10 @@
 .affect {
   position: absolute;
   z-index: 1; /* Lower z-index to be behind the images */
- }
+}
 
-.about1, .about2 {
+.about1,
+.about2 {
   width: 50%;
   height: max-content;
   z-index: 2; /* Higher z-index to be in front of the affect element */
@@ -53,13 +54,16 @@
 }
 
 .a-titleM {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: bold;
+  color: white; /* Text color */
+  text-shadow: -2px -2px 0 #000, 2px 2px 0 #000, -2px -2px 0 #000,
+    2px 2px 0 #000; /* Outline color and position */
 }
 
 .a-para {
   font-weight: 300;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 
 .a-btns {
@@ -103,6 +107,4 @@
 .icon-space {
   margin-right: 15px; /* Adjust the space as needed */
   font-size: larger;
-  
-
 }

@@ -12,7 +12,7 @@ import event4 from "../assets/event4.png"
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <div className="hero" id="hero">
       <div className="upper">
         <h1 className="title">
           Transforming Occasions into <br /> Great Memories
@@ -34,7 +34,7 @@ const Hero = () => {
     <Card className="custom-card" inverse>
       <CardImg
         alt="Card image cap"
-        src={event1} // Using the imported image
+        src={event1} 
         style={{
           height: 300,
         }}

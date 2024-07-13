@@ -1,6 +1,6 @@
 :root
 {
-  --blue: #0342ca;
+  --blue: #0052FF;
     --blue1 :rgb(23, 95, 252);
     --black : #242D49;
     --gray : #788097;
@@ -12,7 +12,7 @@
 }
 
 .App{
-    padding: 0.5rem 3.5rem;
+
     overflow: hidden;
     color: var(--black);    
 }

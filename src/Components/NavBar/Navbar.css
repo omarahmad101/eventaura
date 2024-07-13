@@ -4,6 +4,7 @@
   justify-content: space-between;
   margin-bottom: 2rem;
   top: 0;
+  padding: 0.5rem 3.5rem;
 }
 
 .n-left {
@@ -28,14 +29,12 @@
   font-weight: 400;
 }
 
-
 .n-list > ul {
   display: flex;
   gap: 2rem;
   margin-right: 2rem;
   transition: ease-in-out 0.3s;
-  font-size: 1.9rem; /* Increase the font size here */
-
+  font-size: 1.5rem;
   padding-top: 10px;
 }
 

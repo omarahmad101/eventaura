@@ -9,12 +9,12 @@
 }
 
 .title {
-  font-size: 70px;
+  font-size: 65px;
   font-weight: bold;
 }
 
 .info {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .btns {
@@ -28,9 +28,17 @@
   margin-right: 30px;
   font-size: 1.5rem;
   border-radius: 10px;
-  border: 0;
+  border: 1;
+  border-color: #0052ff;
   background-color: #0052ff;
   color: white;
+  transition: ease-in-out 0.25s;
+
+}
+
+.booknow:hover {
+  background: white;
+  color: #0342ca;
 }
 
 .btn2 {
@@ -42,21 +50,28 @@
   border: 1;
   border-color: #0052ff;
   background-color: white;
+  transition: ease-in-out 0.25s;
+
+}
+
+.btn2:hover {
+  background: #0342ca;
+  color: white;
 }
 
 .cardss {
   margin-top: -60px;
   display: flex;
-  justify-content: center; /* Center the cards within the container */
-  align-items: center; /* Center the cards vertically */
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  margin-bottom: 20px; /* Space between rows */
+  margin-bottom: 20px;
 }
 
 .custom-card {
-  flex: 0 1 23%; /* Adjust the width as needed */
-  margin: 10px; /* Adjust the margin as needed */
+  flex: 0 1 23%;
+  margin: 10px;
   box-sizing: border-box;
 }
 
@@ -64,7 +79,7 @@
   color: white;
   font-weight: bold;
   margin-top: 230px;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 .cards-container {
   display: flex;

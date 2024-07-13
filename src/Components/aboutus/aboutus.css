@@ -1,0 +1,108 @@
+.aboutus {
+  height: 85vh;
+  width: 100%;
+  display: flex;
+  background-color: var(--blue);
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 5rem;
+}
+
+.a-left {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+}
+
+.affect {
+  position: absolute;
+  z-index: 1; /* Lower z-index to be behind the images */
+ }
+
+.about1, .about2 {
+  width: 50%;
+  height: max-content;
+  z-index: 2; /* Higher z-index to be in front of the affect element */
+}
+
+.about1 {
+  margin-top: 170px;
+  margin-right: -150px;
+}
+
+.about2 {
+  margin-bottom: 170px;
+}
+
+.a-right {
+  margin: 10px;
+  width: 55%;
+  color: white;
+  font-size: 1.5rem;
+  border: 1px;
+  height: 50vh;
+  gap: 0.2rem;
+}
+
+.a-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.a-titleM {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.a-para {
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+
+.a-btns {
+  float: left;
+  margin-top: -3rem;
+  margin-left: -3rem;
+}
+
+.a-booknow {
+  padding: 0.8rem;
+  border-radius: 10px;
+  font-size: 28px;
+  border: 0;
+  margin-right: 3rem;
+  color: var(--blue);
+  font-size: larger;
+  font-weight: 600;
+  transition: ease-in-out 0.2s;
+}
+
+.a-booknow:hover {
+  background-color: lightgray;
+}
+
+.a-watch {
+  padding: 0.8rem;
+  border-radius: 10px;
+  font-size: 30px;
+  border: 0;
+  margin-right: 3rem;
+  color: white;
+  font-weight: 600;
+  background-color: transparent;
+  transition: ease-in-out 0.2s;
+}
+
+.a-watch:hover {
+  color: lightgrey;
+}
+
+.icon-space {
+  margin-right: 15px; /* Adjust the space as needed */
+  font-size: larger;
+  
+
+}

@@ -1,0 +1,36 @@
+.gallary {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.s-main {
+    text-align: center;
+}
+
+.s-title {
+    margin-bottom: 20px;
+}
+
+.g-imgs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+    }
+
+.i-left{
+margin-right: -250px;
+}
+
+.i1, .i2, .i3{
+    padding: 9px;
+    height: auto;
+}
+
+.i4, .i5, .i6{
+    padding: 9px;
+}
+
